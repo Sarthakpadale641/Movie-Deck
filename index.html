@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieStream - Premium Card Slider</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header-section">
+            <h2 class="section-title">Trending Now</h2>
+        </header>
+
+        <div class="slider-wrapper swiper">
+           <div class="card-list swiper-wrapper" id="movie-list">
+              <!-- Card 1 -->
+              <div class="card-item swiper-slide">
+                <div class="image-box">
+                    <img src="media/kerala story2.png" alt="The Kerala Story 2" class="product-image">
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="rating"><i class="fas fa-star"></i> 8.2</span>
+                        <span class="genre">Drama</span>
+                    </div>
+                    <h3 class="product-name">The Kerala Story 2</h3>
+                    <p class="description">A gripping narrative highlighting a dramatic and intense struggle for truth and justice in modern times.</p>
+                    <button class="watch-btn" onclick="openModal('The Kerala Story 2', 'Drama', '8.2', 'A gripping narrative highlighting a dramatic and intense struggle for truth and justice in modern times.', 'media/kerala story2.png')">
+                        <i class="fas fa-play"></i> Watch Now
+                    </button>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="card-item swiper-slide">
+                <div class="image-box">
+                    <img src="media/ekaki.png" alt="Ekaki" class="product-image">
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="rating"><i class="fas fa-star"></i> 8.5</span>
+                        <span class="genre">Action</span>
+                    </div>
+                    <h3 class="product-name">Ekaki</h3>
+                    <p class="description">The protagonist faces off with a powerful alien enemy, marking a cinematic battle for survival.</p>
+                    <button class="watch-btn" onclick="openModal('Ekaki', 'Action', '8.5', 'The protagonist faces off with a powerful alien enemy, marking a cinematic battle for survival.', 'media/ekaki.png')">
+                        <i class="fas fa-play"></i> Watch Now
+                    </button>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="card-item swiper-slide">
+                <div class="image-box">
+                    <img src="media/interstellar.png" alt="Interstellar" class="product-image">
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="rating"><i class="fas fa-star"></i> 8.7</span>
+                        <span class="genre">Sci-Fi</span>
+                    </div>
+                    <h3 class="product-name">Interstellar</h3>
+                    <p class="description">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                    <button class="watch-btn" onclick="openModal('Interstellar', 'Sci-Fi', '8.7', 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity\'s survival.', 'media/interstellar.png')">
+                        <i class="fas fa-play"></i> Watch Now
+                    </button>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="card-item swiper-slide">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=500" alt="The Matrix" class="product-image">
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="rating"><i class="fas fa-star"></i> 8.7</span>
+                        <span class="genre">Sci-Fi</span>
+                    </div>
+                    <h3 class="product-name">The Matrix</h3>
+                    <p class="description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war.</p>
+                    <button class="watch-btn" onclick="openModal('The Matrix', 'Sci-Fi', '8.7', 'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war.', 'https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=500')">
+                        <i class="fas fa-play"></i> Watch Now
+                    </button>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="card-item swiper-slide">
+                <div class="image-box">
+                    <img src="media/RRR.png" alt="RRR" class="product-image">
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="rating"><i class="fas fa-star"></i> 8.0</span>
+                        <span class="genre">Action</span>
+                    </div>
+                    <h3 class="product-name">RRR</h3>
+                    <p class="description">A tale of two legendary revolutionaries and their journey far from home before they began fighting for their country.</p>
+                    <button class="watch-btn" onclick="openModal('RRR', 'Action', '8.0', 'A tale of two legendary revolutionaries and their journey far from home before they began fighting for their country.', 'media/RRR.png')">
+                        <i class="fas fa-play"></i> Watch Now
+                    </button>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="card-item swiper-slide">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=500" alt="The Godfather" class="product-image">
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="rating"><i class="fas fa-star"></i> 9.2</span>
+                        <span class="genre">Drama</span>
+                    </div>
+                    <h3 class="product-name">The Godfather</h3>
+                    <p class="description">An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.</p>
+                    <button class="watch-btn" onclick="openModal('The Godfather', 'Drama', '9.2', 'An organized crime dynasty\'s aging patriarch transfers control of his clandestine empire to his reluctant son.', 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=500')">
+                        <i class="fas fa-play"></i> Watch Now
+                    </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper Navigation Buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Movie Details Modal -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="modal-left">
+                <img src="" id="modalImg" alt="Movie Poster">
+            </div>
+            <div class="modal-right">
+                <div class="modal-meta">
+                    <span id="modalRating"><i class="fas fa-star"></i> 0.0</span>
+                    <span id="modalGenre">Genre</span>
+                    <span>2h 30m</span>
+                </div>
+                <h2 class="modal-title" id="modalTitle">Movie Title</h2>
+                <p class="modal-description" id="modalDesc">Detailed description goes here...</p>
+                <div class="modal-actions">
+                    <a href="#" class="btn-primary"><i class="fas fa-play"></i> Play Trailer</a>
+                    <a href="#" class="btn-secondary"><i class="fas fa-plus"></i> Add to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.slider-wrapper', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+                1280: { slidesPerView: 4 }
+            }
+        });
+
+        // Modal Logic
+        const modal = document.getElementById('movieModal');
+        const closeModal = document.getElementById('closeModal');
+
+        function openModal(title, genre, rating, desc, img) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalGenre').innerText = genre;
+            document.getElementById('modalRating').innerHTML = `<i class="fas fa-star"></i> ${rating}`;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('modalImg').src = img;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        closeModal.onclick = function() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
